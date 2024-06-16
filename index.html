@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potpoliyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <nav class="Test1">
+        <canvas id="tutorial"></canvas>
+        <div class="frame">
+            <!-- <button onclick="document.getElementById('TestAbout').scrollIntoView({ behavior: 'smooth' });" class="custom-btn btn-12"><span>Click!</span><span>About</span></button> -->
+            
+            <button onclick="(function() {
+                const element = document.getElementById('TestAbout');
+                const offset = 225; // offset value in pixels
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            })()" class="custom-btn btn-12"><span>Click !</span><span>About</span></button>
+            
+            
+            <!-- <button onclick="document.getElementById('skill').scrollIntoView({ behavior: 'smooth' });" class="custom-btn btn-12"><span>Click!</span><span>Skills</span></button> -->
+            
+            <button onclick="(function() {
+                const element = document.getElementById('skill');
+                const offset = 100; // offset value in pixels
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            })()" class="custom-btn btn-12"><span>Click !</span><span>Skills</span></button>
+
+            
+            <!-- <button onclick="document.getElementById('TestCertficate').scrollIntoView({ behavior: 'smooth' });" class="custom-btn btn-12"><span>Click!</span><span>Certificates</span></button> -->
+            
+            <button onclick="(function() {
+                const element = document.getElementById('TestCertficate');
+                const offset = 100; // offset value in pixels
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            })()" class="custom-btn btn-12"><span>Click !</span><span>Certificates</span></button>
+
+            
+            <!-- <button onclick="document.getElementById('TestProject').scrollIntoView({ behavior: 'smooth' });" class="custom-btn btn-12"><span>Click!</span><span>Project</span></button> -->
+            <button onclick="(function() {
+                const element = document.getElementById('TestProject');
+                const offset = 100; // offset value in pixels
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - offset;
+            
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            })()"class="custom-btn btn-12"><span>Click !</span><span>Project</span></button>
+
+           
+            <button class="custom-btn btn-12"><span>Click !</span><span>Contact</span></button>
+        </div> 
+    </nav>
+    <section class="Test2" id="my-gallery">
+        <div id="drag-container">
+            <div id="spin-container">
+          
+              <img src="https://i.ibb.co/qFwFns0/photo-2023-10-07-17-25-37.jpg" alt="">
+              <img src="https://i.ibb.co/6yjHZ9D/photo-2023-10-07-17-46-50.jpg" alt="">
+              <img src="https://i.ibb.co/2yhht09/photo-2023-10-07-17-46-57.jpg" alt="">
+              <img src="https://i.ibb.co/0K2P3cR/photo-2023-10-07-17-47-09.jpg" alt="">
+              <img src="https://i.ibb.co/rGzrLC1/photo-2023-10-07-17-46-53.jpg" alt="">
+              <img src="https://i.ibb.co/M2Knqtx/Rupesh-pic2.jpg" alt="">
+              <img src="https://i.ibb.co/sV5tzpX/photo-2023-10-07-18-19-07.jpg" alt="">
+          
+              <!-- Text at center of ground -->
+              <p style="align-items: center;text-align: center;font-size: 300%;justify-content: center;">Hi, I'm Rupesh Raj</p>
+            </div>
+            <div id="ground"></div>
+    </section>
+    <section class="Test3about id="TestAbout">
+        <h1 id="main1">ABOUT ME</h1>
+        <!-- <main id="main1">ABOUT ME</main> -->
+    </section>
+    <section class="Test3 background" id="TestAbout">
+        <div id="app">
+            <div id="hero">
+                <!-- <h1>About Me</h1> -->
+                <h3 style="width: 145%;"></h3>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="Test4"><h1>This is skills</h1></section> -->
+    <section class="Test4" id="skill">
+        <div class="skills-section">
+            <!-- <h1>This is skills</h1> -->
+            <svg viewBox="0 0 1320 300">
+
+                <!-- Symbol -->
+                <symbol id="s-text">
+                  <text text-anchor="middle"
+                        x="50%" y="50%" dy=".35em">
+                    MY SKILLS
+                  </text>
+                </symbol>  
+              
+                <!-- Duplicate symbols -->
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+              </svg>
+            <div class="skill html">
+                HTML
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 95%;">95%</div>
+                </div>
+            </div>
+            <div class="skill css">
+                CSS
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="skill bootstrap">
+                BOOTSTRAP
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill javascript">
+                JAVASCRIPT
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill java">
+                JAVA
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill python">
+                PYTHPN
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="skill c">
+                C
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill sql">
+                SQL
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 90%;">90%</div>
+                 </div>
+            </div>
+            <div class="skill j2ee">
+                J2EE
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill react">
+                React
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="skill spring">
+                Spring
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill django">
+                Django
+                <div class="progress-container">
+                    <div class="progress-bar" style="--progress: 70%;">70%</div>
+                </div>
+            </div>
+        </div>
+        <div id="bubbles"></div>
+        <div id="bubbles2"></div>
+        <div id="bubbles3"></div>
+    </section>
+    
+
+
+
+    <section class="TestCertficate" id="TestCertficate">
+            <span>
+              MY CERTIFICATES
+            </span>
+    </section>
+
+
+
+    <section class="Test5">
+        <!-- <h1>This is certificate</h1> -->
+        <div class="container">
+            <div class="full-view"></div>
+            <div class="preview-list">
+                <ul>
+                    <li>
+                        <input type="radio" id="tab-1" name="gallery-group">
+                        <label for="tab-1">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/wyf2cxx/java-basic-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/wyf2cxx/java-basic-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-2" name="gallery-group">
+                        <label for="tab-2">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/DpBRGMc/python-certficate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/DpBRGMc/python-certficate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-3" name="gallery-group">
+                        <label for="tab-3">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/3CPWRSH/javascript-intermediate-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/3CPWRSH/javascript-intermediate-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-4" name="gallery-group" checked>
+                        <label for="tab-4">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/nQsNqXc/software-engineer-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/nQsNqXc/software-engineer-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-5" name="gallery-group">
+                        <label for="tab-5">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/TwwNwkG/software-engineer-intern-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/TwwNwkG/software-engineer-intern-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-6" name="gallery-group">
+                        <label for="tab-6">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/8DgKLBz/problem-solving-intermediate-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/8DgKLBz/problem-solving-intermediate-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-7" name="gallery-group">
+                        <label for="tab-7">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/GMNJNdj/sql-advanced-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/GMNJNdj/sql-advanced-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-8" name="gallery-group">
+                        <label for="tab-8">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/LrNHX4D/react-basic-certificate.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/LrNHX4D/react-basic-certificate.jpg" />
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="tab-9" name="gallery-group">
+                        <label for="tab-9">
+                            <div class="tab">
+                                <img src="https://i.ibb.co/pbQNTzR/Rupesh-Raj-Web-development-using-Java-Script.jpg" />
+                            </div>
+                        </label>
+                        <div class="content">
+                            <img src="https://i.ibb.co/pbQNTzR/Rupesh-Raj-Web-development-using-Java-Script.jpg" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="TestProject" id="TestProject">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+        <div class="logo1">MY PROJECTS</div> 
+    </section>
+    <section class="Test6"><h1>This is Project</h1></section>
+    <section class="Test7">
+
+        <footer class="footer">
+            <!-- <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find Me</h4>
+                            <span>K.R. Road Gandhi Bazar, Basavanagudi, Bengaluru, Karnataka 560004</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call Me</h4>
+                            <span>+91 9507073997</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail Me</h4>
+                            <span>rupeshraj1012001@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find Me</h4>
+                            <span>K.R. Road Gandhi Bazar, Basavanagudi, Bengaluru, Karnataka 560004</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call Me</h4>
+                            <span>+91 9507073997</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail Me</h4>
+                            <span>rupeshraj1012001@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find Me</h4>
+                            <span>K.R. Road Gandhi Bazar, Basavanagudi,<br> Bengaluru, Karnataka 560004</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call Me</h4>
+                            <span>+91 9507073997</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail Me</h4>
+                            <span>rupeshraj1012001 @gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row2">
+                <a href="https://github.com/rupeshraj2001" id="footerA">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa-brands fa-github"></i>
+                            <div class="cta-text">
+                                <h4>Github</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/rupesh2001" id="footerA">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div class="cta-text">
+                                <h4>Linkedin</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </footer>
+
+
+
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      id="svg"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 
+        58-18 88-18s
+        58 18 88 18 
+        58-18 88-18 
+        58 18 88 18
+        v44h-352z"
+        />
+      </defs>
+      <g class="waves">
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="0"
+          fill="#03ffff"
+          fill-opacity=".2"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="3"
+          fill="#03ffff"
+          fill-opacity=".5"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="50"
+          y="6"
+          fill="#03ffff"
+          fill-opacity=".9"
+        />
+      </g>
+</svg>
+
+
+
+
+
+    </section>
+
+
+    
+
+
+    <script src="./script.js"></script>
+    <script src="./home.js"></script>
+    <script src="./skills.js"></script>
+    <script type="module">
+    import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js';
+
+const pc = particlesCursor({
+    el: document.getElementById('app'),
+    gpgpuSize: 512,
+    colors: [0x00fffc, 0x0000ff],
+    color: 0xff0000,
+    coordScale: 0.5,
+    noiseIntensity: 0.005,
+    noiseTimeCoef: 0.0001,
+    pointSize: 2,
+    pointDecay: 0.0025,
+    sleepRadiusX: 250,
+    sleepRadiusY: 250,
+    sleepTimeCoefX: 0.001,
+    sleepTimeCoefY: 0.002
+});
+
+// document.addEventListener('mousemove', (event) => {
+//     const mouseX = event.clientX / window.innerWidth;
+//     const mouseY = 1 - event.clientY / window.innerHeight;
+//     pc.uniforms.uMousePos.value.set(mouseX, mouseY);
+// });
+
+document.body.addEventListener('click', () => {
+    pc.uniforms.uColor.value.set(Math.random() * 0xffffff);
+    pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2;
+    pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
+    pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
+});
+
+document.body.addEventListener('click', () => {
+    pc.uniforms.uColor.value.set(Math.random() * 0xffffff);
+    pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2;
+    pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001;
+    pc.uniforms.uPointSize.value = 1 + Math.random() * 10;
+    
+    setTimeout(() => {
+        pc.uniforms.uColor.value.set(0x000000);
+        pc.uniforms.uCoordScale.value = 0.001;
+        pc.uniforms.uNoiseIntensity.value = 0.0001;
+        pc.uniforms.uPointSize.value = 0;
+    }, 2000);
+});
+
+
+// Array containing the text
+const textArray = [
+    // "Greetings,", "I'm", "Rupesh", "Raj,", "a", "22-year-old", "currently", 
+    // "pursuing", "my", "Master", "of", "Computer", "Applications", "(MCA)", "degree", 
+    // "at", "IGNOU", "in", "Patna.", "My", "essence", "is", "defined", 
+    // "by", "a", "fervent", "passion", "for", "problem-solving,", "coupled", 
+    // "with", "an", "innate", "talent", "for", "crafting", "visually", 
+    // "appealing", "and", "user-centric", "solutions.", "My", "unquenchable", 
+    // "thirst", "for", "knowledge,", "bolstered", "by", "an", "analytical", 
+    // "mindset", "and", "an", "unwavering", "commitment", "to", "staying", 
+    // "abreast", "of", "emerging", "technologies", "and", "design", "trends,", 
+    // "positions", "me", "as", "a", "valuable", "contributor", "in", "the", 
+    // "realm", "of", "technology.", "I", "wholeheartedly", "embrace", "every", 
+    // "opportunity", "that", "offers", "learning", "potential,", "relentlessly", 
+    // "working", "to", "diversify", "my", "skill", "set.", "Simultaneously,", 
+    // "I", "am", "meticulously", "building", "a", "portfolio", "to", "showcase", 
+    // "my", "accomplishments,", "and", "I", "am", "deeply", "enthusiastic", "about", 
+    // "expanding", "my", "network", "within", "the", "dynamic", "tech", "industry.", 
+    // "My", "passion", "lies", "in", "translating", "my", "profound", "love", 
+    // "for", "technology", "into", "a", "rewarding", "and", "ever-evolving", 
+    // "career.", "Whether", "that", "means", "pursuing", "a", "path", "as", 
+    // "a", "software", "developer,", "a", "UX/UI", "designer,", "or", "a", 
+    // "role", "that", "beautifully", "blends", "these", "two", "domains,", 
+    // "I", "am", "excited", "about", "the", "possibilities.", 
+    // "I", "firmly", "believe", "that", "progress", "is", "driven", "by", 
+    // "collaboration", "and", "innovation,", "and", "I", "am", "thrilled", "to", 
+    // "be", "part", "of", "this", "constantly", "evolving", "journey.", 
+    // "Let's", "connect", "and", "embark", "on", "a", "voyage", "to", 
+    // "explore", "the", "boundless", "horizons", "of", "technology", "together!"
+
+
+
+
+
+    // "Greetings", "I", "am", "Rupesh", "Raj", "a", "23-year-old", "with", "a", "passion", "for", "technology", "and", "literature",
+    // "My", "academic", "journey", "began", "at", "St.", "Paul", "Public", "School", "where", "I", "completed", "my", "10th", "class", "in", "2016",
+    // "Following", "this", "I", "pursued", "my", "12th", "class", "at", "Sri", "Chaitanya", "Techno", "School", "graduating", "in", "2018",
+    // "My", "inclination", "towards", "the", "arts", "led", "me", "to", "Lalit", "Narayana", "Mithila", "University", "where", "I", "earned", "a", "Bachelor's", "degree", "in", "English", "(Honors)", "in", "2023",
+    // "While", "my", "undergraduate", "studies", "allowed", "me", "to", "delve", "deep", "into", "the", "nuances", "of", "English", "literature", "and", "language", "my", "interest", "in", "technology", "never", "waned",
+    // "This", "dual", "interest", "has", "given", "me", "a", "unique", "perspective", "on", "communication", "and", "technical", "skills", "an", "asset", "I", "believe", "is", "crucial", "in", "today's", "interconnected", "world",
+    // "Currently", "I", "am", "channeling", "this", "interest", "by", "pursuing", "a", "Master's", "in", "Computer", "Applications", "(MCA)", "from", "IGNOU",
+    // "My", "goal", "is", "to", "become", "a", "software", "engineer", "a", "field", "where", "I", "can", "blend", "my", "analytical", "skills", "with", "my", "creativity",
+    // "I", "am", "particularly", "drawn", "to", "the", "problem-solving", "aspects", "of", "software", "development", "and", "the", "potential", "to", "create", "impactful", "digital", "solutions",
+    // "The", "rigorous", "curriculum", "of", "the", "MCA", "program", "combined", "with", "my", "dedication", "to", "continuous", "learning", "is", "equipping", "me", "with", "the", "necessary", "skills", "in", "programming", "system", "analysis", "and", "software", "design",
+    // "To", "further", "hone", "my", "skills", "I", "practice", "coding", "on", "platforms", "such", "as", "HackerRank", "Leetcode", "CodeChef", "HackerEarth", "InterviewBit", "and", "Kaggle", "etc.",
+    // "These", "platforms", "offer", "a", "wide", "range", "of", "challenges", "that", "help", "me", "apply", "my", "knowledge", "in", "practical", "scenarios", "and", "stay", "updated", "with", "industry", "trends",
+    // "I", "am", "excited", "about", "the", "journey", "ahead", "and", "eager", "to", "contribute", "to", "the", "ever-evolving", "field", "of", "software", "engineering", "where", "I", "can", "leverage", "my", "diverse", "background", "to", "make", "a", "meaningful", "impact"
+
+
+
+"Greetings", "I'm", "Rupesh", "Raj,", "a", "23-year-old", "enthusiast", "driven", "by", "a", "dual", "passion", "for", "technology", "and", "literature.", "My", "educational", "voyage", "commenced", "at", "St.", "Paul", "Public", "School,", "where", "I", "completed", "my", "10th", "class", "in", "2016,", "followed", "by", "Sri", "Chaitanya", "Techno", "School,", "where", "I", "compleated", "my", "12th", "class", "in", "2018.", "These", "formative", "years", "not", "only", "equipped", "me", "with", "foundational", "knowledge", "but", "also", "instilled", "in", "me", "a", "curiosity", "to", "explore", "diverse", "fields.",
+
+"My", "academic", "path", "then", "led", "me", "to", "Lalit", "Narayana", "Mithila", "University,", "where", "I", "pursued", "a", "Bachelor's", "degree", "in", "English", "(Honors),", "graduating", "in", "2022.", "Engaging", "deeply", "with", "English", "literature", "and", "language", "allowed", "me", "to", "appreciate", "the", "nuances", "of", "communication", "and", "storytelling,", "skills", "that", "I", "find", "indispensable", "in", "both", "personal", "and", "professional", "contexts.",
+
+"Throughout", "my", "undergraduate", "journey,", "I", "never", "lost", "sight", "of", "my", "fascination", "with", "technology.", "This", "parallel", "interest", "in", "technology", "and", "the", "arts", "has", "granted", "me", "a", "unique", "perspective,", "blending", "analytical", "thinking", "with", "creativity—an", "amalgamation", "that", "I", "believe", "is", "increasingly", "vital", "in", "today's", "interconnected", "world.", "This", "led", "me", "to", "embark", "on", "a", "Master's", "in", "Computer", "Applications", "(MCA)", "program", "at", "IGNOU,", "where", "I", "am", "currently", "refining", "my", "technical", "prowess", "and", "exploring", "the", "intricate", "world", "of", "software", "engineering.",
+
+"My", "aspiration", "is", "to", "become", "a", "software", "engineer,", "a", "profession", "that", "resonates", "deeply", "with", "my", "penchant", "for", "problem-solving", "and", "my", "desire", "to", "create", "impactful", "digital", "solutions.", "I", "am", "captivated", "by", "the", "dynamic", "nature", "of", "software", "development,", "where", "innovation", "and", "continuous", "learning", "are", "not", "just", "encouraged", "but", "essential", "for", "staying", "ahead.", "The", "MCA", "program's", "rigorous", "curriculum", "is", "equipping", "me", "with", "crucial", "skills", "in", "programming,", "system", "analysis,", "software", "design,", "and", "more,", "laying", "a", "solid", "foundation", "for", "my", "future", "career", "endeavors.",
+
+"In", "addition", "to", "my", "formal", "education,", "I", "am", "actively", "engaged", "in", "enhancing", "my", "coding", "skills", "through", "platforms", "like", "HackerRank,", "LeetCode,", "CodeChef,", "HackerEarth,", "InterviewBit,", "and", "Kaggle.","etc.", "These", "platforms", "offer", "a", "plethora", "of", "challenges", "and", "real-world", "problems", "that", "push", "me", "to", "think", "critically", "and", "creatively.", "They", "also", "provide", "an", "invaluable", "opportunity", "to", "apply", "theoretical", "knowledge", "to", "practical", "scenarios,", "keeping", "me", "abreast", "of", "current", "industry", "practices", "and", "trends.",
+
+"Beyond", "coding", "challenges,", "I", "am", "enthusiastic", "about", "collaborating", "on", "projects", "that", "require", "interdisciplinary", "skills,", "where", "I", "can", "leverage", "both", "my", "literary", "background", "and", "technical", "acumen.", "I", "believe", "that", "effective", "software", "engineering", "involves", "not", "only", "writing", "code", "but", "also", "understanding", "user", "needs,", "communicating", "effectively", "within", "teams,", "and", "continuously", "refining", "solutions", "based", "on", "feedback", "and", "data.",
+
+"Looking", "ahead,", "I", "am", "eager", "to", "contribute", "to", "the", "ever-evolving", "field", "of", "software", "engineering.", "I", "see", "it", "as", "a", "realm", "where", "I", "can", "merge", "my", "diverse", "educational", "background", "and", "passion", "for", "technology", "to", "make", "meaningful", "contributions.", "Whether", "it's", "developing", "efficient", "algorithms,", "building", "user-friendly", "interfaces,", "or", "optimizing", "system", "performance,", "I", "am", "committed", "to", "pursuing", "excellence", "and", "making", "a", "positive", "impact.",
+
+"In", "conclusion,", "my", "journey", "from", "a", "literature", "enthusiast", "to", "a", "budding", "software", "engineer", "is", "marked", "by", "a", "relentless", "pursuit", "of", "knowledge,", "a", "thirst", "for", "innovation,", "and", "a", "dedication", "to", "mastering", "the", "intricacies", "of", "both", "language", "and", "code.", "I", "am", "excited", "about", "the", "opportunities", "that", "lie", "ahead", "and", "am", "prepared", "to", "embrace", "the", "challenges", "of", "this", "dynamic", "field", "with", "enthusiasm", "and", "determination."
+
+];
+
+// Function to display the text word by word
+const displayText = async () => {
+    const h1Element = document.querySelector('#hero h3');
+    for (const word of textArray) {
+        h1Element.innerHTML += word + ' ';
+        await new Promise(resolve => setTimeout(resolve, 100)); // Delay of 100ms
+    }
+};
+
+// // Function to display the text word by word
+// const displayText = async () => {
+//     const h1Element = document.querySelector('#hero h3');
+//     for (const word of textArray) {
+//         h1Element.innerHTML += word + ' ';
+//         await new Promise(resolve => setTimeout(resolve, 100)); // Delay of 100ms
+//     }
+// };
+
+// // Intersection Observer setup
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             // When #hero comes into view at the top, call displayText function
+//             displayText();
+//             // Stop observing once triggered
+//             observer.unobserve(entry.target);
+//         }
+//     });
+// }, {
+//     root: null, // viewport
+//     threshold: 0 // when any part of #hero is visible
+// });
+
+// // Observe the #hero element
+// const heroElement = document.querySelector('#hero');
+// observer.observe(heroElement);
+
+// Start displaying text on load
+window.onload = displayText;
+    </script>
+</body>
+</html>
