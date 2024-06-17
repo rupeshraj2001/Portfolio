@@ -622,11 +622,23 @@ const textArray = [
 ];
 
 // Function to display the text word by word
+        
+// const displayText = async () => {
+//     const h1Element = document.querySelector('#hero h3');
+//     for (const word of textArray) {
+//         h1Element.innerHTML += word + ' ';
+//         await new Promise(resolve => setTimeout(resolve, 100)); // Delay of 100ms
+//     }
+// };
+
 const displayText = async () => {
     const h1Element = document.querySelector('#hero h3');
-    for (const word of textArray) {
-        h1Element.innerHTML += word + ' ';
-        await new Promise(resolve => setTimeout(resolve, 100)); // Delay of 100ms
+    while (true) {
+        h1Element.innerHTML = ''; // Clear the content before starting
+        for (const word of textArray) {
+            h1Element.innerHTML += word + ' ';
+            await new Promise(resolve => setTimeout(resolve, 100)); // Delay of 100ms
+        }
     }
 };
 
